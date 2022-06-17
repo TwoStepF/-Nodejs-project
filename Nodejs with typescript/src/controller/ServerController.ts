@@ -1,24 +1,28 @@
 import { Request, Response } from "express";
-import ServerRepository from "../repository/ServerRopository";
+import ServerService from "../models/Service/ServerService";
     
 const getAllServer = (req: Request, res: Response) => {
-        ServerRepository.querygetAllServer(req, res);
+        ServerService.getAllServer();
 }
 
 const getDetailServer = (req: Request, res: Response) => {
-        ServerRepository.querygetDetailServer(req, res);
+        ServerService.getDetailServer(req, res);
 }
 
 const updateServer = (req: Request, res: Response) => {
-        ServerRepository.queryUpdateServer(req, res);
+        ServerService.updateServer(req, res);
 }
 
 const createServer = (req: Request, res: Response) => {
-        ServerRepository.queryCreateServer(req, res)
+        ServerService.createServer(req, res)
 }
 
 const deleteServer = (req: Request, res: Response) => {
-        ServerRepository.queryDeleteServer(req, res)
+        ServerService.deleteServer(req, res)
+}
+
+const findServerByKey = (req: Request, res: Response) => {
+        ServerService.findServerByKey(req, res)
 }
 
 export default {
@@ -26,5 +30,6 @@ export default {
         getDetailServer,
         updateServer,
         createServer,
-        deleteServer
+        deleteServer,
+        findServerByKey
 }

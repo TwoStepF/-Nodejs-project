@@ -1,11 +1,9 @@
 import express, { Router } from "express";
 import bodyParser from "body-parser";
-import cors from "cors"
-import { con } from "./config/dbConnect";
-import config from "./config/config";
 import routerServer from "./router/server";
+import {con} from "./config/dbConnect";
 import AdminRouter from "./router/admin";
-const PORT = 8080;
+const PORT = 8081;
 
 export class App {
     public app: express.Application;
@@ -36,7 +34,7 @@ export class App {
 
     public createData(){
             con.query("CREATE TABLE admin"+
-                        "(id INT AUTO_INCREMENT PRIMARY KEY,"+ 
+                        "(id INT AUTO_INCREMENT PRIMARY KEY,"+
                         " admin_name NVARCHAR(255) NOT NULL UNIQUE,"+
                         " password VARCHAR(255) NOT NULL);", function (err, result) {
                 if (err)
@@ -44,7 +42,7 @@ export class App {
                 console.log("Table created");
             });
             con.query("CREATE TABLE server"+
-                        "(id INT AUTO_INCREMENT PRIMARY KEY,"+ 
+                        "(id INT AUTO_INCREMENT PRIMARY KEY,"+
                         " name NVARCHAR(255) NOT NULL UNIQUE,"+
                         " password VARCHAR(255) NOT NULL,"+
                         " status boolean default false,"+

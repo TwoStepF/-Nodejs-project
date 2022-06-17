@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91e59df7-1d4a-47b1-a007-e9266d00d184" name="Default Changelist" comment="" />
+    <list default="true" id="91e59df7-1d4a-47b1-a007-e9266d00d184" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/models/DTO/RegisterDTO.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Service/AuthService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ServerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ServerController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funtions/signJWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/funtions/signJWT.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Admin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/AdminRepository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/ServerRopository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="2A4Um6TUHkpqTUdr8KJ5vrgWtsr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,13 +54,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EnglishApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\Nodejs with typescript\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\-Nodejs-project\Nodejs with typescript\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -46,6 +82,11 @@
       <workItem from="1654437517972" duration="594000" />
       <workItem from="1654492468203" duration="8790000" />
       <workItem from="1654582906256" duration="1579000" />
+      <workItem from="1655347140868" duration="2962000" />
+      <workItem from="1655350427441" duration="3734000" />
+      <workItem from="1655366680547" duration="24549000" />
+      <workItem from="1655425574223" duration="1652000" />
+      <workItem from="1655427365253" duration="5953000" />
     </task>
     <servers />
   </component>

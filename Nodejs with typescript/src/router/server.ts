@@ -9,4 +9,5 @@ routerServer.put('/:id', ExtractToken, AdminController.updateServer)
 routerServer.post('/', ExtractToken, AdminController.createServer)
 routerServer.delete('/:id', ExtractToken, AdminController.deleteServer)
 
+
 export default routerServer
