@@ -8,12 +8,12 @@ const routerServer = Router();
 
 
 const serverRouter = new ServerRouter(routerServer, ServerController);
-serverRouter.getWithToken('/search', 'findServerByKey')
-serverRouter.getWithToken('/:id', 'getDetailServer')
-serverRouter.putWithToken('/:id', 'updateServer')
-serverRouter.deleteWithToken('/:id', 'deleteServer')
-serverRouter.postWithToken('/', 'createServer')
-serverRouter.getWithToken('/', 'getAllServer')
+serverRouter.get('/search', true, 'findServerByKey')
+serverRouter.get('/:id', true, 'getDetailServer')
+serverRouter.put('/:id', true, 'updateServer')
+serverRouter.delete('/:id', true, 'deleteServer')
+serverRouter.post('/', true, 'createServer')
+serverRouter.get('/', true, 'getAllServer')
 
 export default routerServer
 

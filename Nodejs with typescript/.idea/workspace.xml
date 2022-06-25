@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e59df7-1d4a-47b1-a007-e9266d00d184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/middleware/ServerRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/baseRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/validateData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/repository/BaseRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AuthController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ServerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ServerController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/extractJWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/extractJWT.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Service/AdminService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/AuthRouter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Service/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Service/AuthService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Service/ServerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Service/ServerService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/baseRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/baseRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +88,7 @@
       <workItem from="1656062050948" duration="5053000" />
       <workItem from="1656073783541" duration="590000" />
       <workItem from="1656120868297" duration="18647000" />
+      <workItem from="1656159328263" duration="1316000" />
     </task>
     <servers />
   </component>

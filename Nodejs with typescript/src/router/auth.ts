@@ -5,8 +5,8 @@ import AuthRouter from "../middleware/AuthRouter";
 const Adminrouter =  Router();
 
 const authRouter = new AuthRouter(Adminrouter, AuthController);
-authRouter.post('/register', 'register');
-authRouter.post('/login', 'login')
+authRouter.post('/register',false,  'register');
+authRouter.post('/login', false,'login')
 export default Adminrouter;
 
 

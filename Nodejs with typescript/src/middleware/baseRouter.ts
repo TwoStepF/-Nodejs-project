@@ -9,34 +9,36 @@ export default class BaseRouter {
         this.controller = controller
     }
 
-    getWithToken(path: string, controllerFuntion: string){
-        this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+    get(path: string, token: boolean, controllerFuntion: string){
+        if(token) {
+            this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+        }else{
+            this.router.get(path, this.controller[controllerFuntion])
+        }
     }
 
-    putWithToken(path: string, controllerFuntion: string){
-        this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+    put(path: string, token: boolean, controllerFuntion: string){
+        if(token){
+            this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+        }else{
+            this.router.get(path, this.controller[controllerFuntion])
+        }
     }
 
-    postWithToken(path: string, controllerFuntion: string){
-        this.router.post(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+    post(path: string, token: boolean, controllerFuntion: string){
+        if(token){
+            this.router.post(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+        }else{
+            this.router.post(path, this.controller[controllerFuntion])
+        }
     }
 
-    deleteWithToken(path: string, controllerFuntion: string){
-        this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
-    }
-
-    get(path: string, controllerFuntion: string){
-        this.router.get(path, this.controller[controllerFuntion])
-    }
-
-    put(path: string, controllerFuntion: string){
-        this.router.get(path, this.controller[controllerFuntion])
-    }
-    post(path: string, controllerFuntion: string){
-        this.router.post(path, this.controller[controllerFuntion])
-    }
-    delete(path: string, controllerFuntion: string){
-        this.router.get(path, this.controller[controllerFuntion])
+    delete(path: string,token: boolean, controllerFuntion: string){
+        if(token){
+            this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+        }else{
+            this.router.get(path, this.controller[controllerFuntion])
+        }
     }
 
 }
