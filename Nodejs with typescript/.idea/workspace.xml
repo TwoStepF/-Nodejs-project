@@ -2,34 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e59df7-1d4a-47b1-a007-e9266d00d184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/DTO/RegisterDTO.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Service/AuthService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/ServerRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/baseRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/validateData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/repository/BaseRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AdminController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AuthController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ServerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ServerController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/funtions/signJWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/funtions/signJWT.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Admin.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/AdminRepository.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/ServerRopository.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/extractJWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/extractJWT.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Service/AdminService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/AuthRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Service/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Service/AuthService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Service/ServerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Service/ServerService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -86,7 +90,19 @@
       <workItem from="1655350427441" duration="3734000" />
       <workItem from="1655366680547" duration="24549000" />
       <workItem from="1655425574223" duration="1652000" />
-      <workItem from="1655427365253" duration="5953000" />
+      <workItem from="1655427365253" duration="6258000" />
+      <workItem from="1655443580145" duration="8410000" />
+      <workItem from="1655455967170" duration="14460000" />
+      <workItem from="1655476851046" duration="1180000" />
+      <workItem from="1655513135309" duration="837000" />
+      <workItem from="1655552876653" duration="3714000" />
+      <workItem from="1655951038912" duration="6384000" />
+      <workItem from="1655972277240" duration="4880000" />
+      <workItem from="1656036281157" duration="842000" />
+      <workItem from="1656038126054" duration="6621000" />
+      <workItem from="1656062050948" duration="5053000" />
+      <workItem from="1656073783541" duration="590000" />
+      <workItem from="1656120868297" duration="18647000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import AuthService from "../models/Service/AuthService";
 
 export default {
-    async register(req: Request, res: Response) {
+    async register(req: Request, res: Response){
         let register = await AuthService.register(req, res);
         res.json(register)
     },

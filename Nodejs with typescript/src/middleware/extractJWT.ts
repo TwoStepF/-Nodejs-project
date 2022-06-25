@@ -29,4 +29,12 @@ const ExtractToken = (req: Request, res: Response, next: NextFunction) => {
     }
 };
 
-export default ExtractToken;
+const GetNameFromRequest = (req: Request, res: Response) => {
+    let token = String(req.headers.authorization?.split(' ')[1]);
+    let decoded = jwt.verify(token, config.server.token.secret);
+}
+
+export default {
+    ExtractToken,
+    GetNameFromRequest
+}

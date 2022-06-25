@@ -1,21 +1,20 @@
 import {Status} from "../DTO/Status";
 import { Request, Response } from "express";
-import AdminRepository from "../repository/AdminRepository";
+
 import bcryptjs from "bcryptjs"
 import config from "../../config/config";
 import signJWT from "../../funtions/signJWT";
 import {LoginDTO} from "../DTO/LoginDTO";
 import {RegisterDTO} from "../DTO/RegisterDTO";
-import {con} from "../../config/dbConnect";
-import {Admin} from "../Entitys/Admin";
+import AdminRepository from "../repository/AdminRepository";
 
 export default {
     async login(req: Request, res: Response): Promise<LoginDTO> {
         let name = req.body.username;
         let password = req.body.password;
-        let admin = await AdminRepository.findAdminByName(name);
+        let admin = await AdminRepository.findByUniqueColumn('admin','admin_name', name);
         let lg: LoginDTO = new LoginDTO(config.message.message.login_error, '', '')
-        if (admin.id === -1) {
+        if(admin === undefined){
             return new Promise(function (resolve, reject) {
                 resolve(lg);
             })
@@ -34,13 +33,12 @@ export default {
         })
     },
     async register(req: Request, res: Response): Promise<Status> {
-        let name =  req.body.name;
+        let name =  req.body.username;
         let password = req.body.password;
-        console.log(name + password)
         return new Promise(function (resolve, reject) {
-            bcryptjs.hash(password, 10, (err, hash) => {
+            bcryptjs.hash(password, 10, async (err, hash) => {
                 let registerDTO: RegisterDTO = new RegisterDTO(name, hash);
-                resolve(AdminRepository.createAdmin(registerDTO))
+                resolve(await AdminRepository.createAdmin(registerDTO))
             })
         })
     }

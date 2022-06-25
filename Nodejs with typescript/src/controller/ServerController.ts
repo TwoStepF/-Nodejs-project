@@ -1,28 +1,35 @@
 import { Request, Response } from "express";
 import ServerService from "../models/Service/ServerService";
+
     
-const getAllServer = (req: Request, res: Response) => {
-        ServerService.getAllServer();
+const getAllServer = async (req: Request, res: Response) => {
+        let servers = await ServerService.getAllServer();
+        res.json(servers);
 }
 
-const getDetailServer = (req: Request, res: Response) => {
-        ServerService.getDetailServer(req, res);
+const getDetailServer = async (req: Request, res: Response) => {
+        let server = await ServerService.getDetailServer(req, res);
+        res.json(server);
 }
 
-const updateServer = (req: Request, res: Response) => {
-        ServerService.updateServer(req, res);
+const updateServer = async (req: Request, res: Response) => {
+        let server = await ServerService.updateServer(req, res);
+        res.json(server)
 }
 
-const createServer = (req: Request, res: Response) => {
-        ServerService.createServer(req, res)
+const createServer = async (req: Request, res: Response) => {
+        let server = await ServerService.createServer(req, res)
+        res.json(server)
 }
 
-const deleteServer = (req: Request, res: Response) => {
-        ServerService.deleteServer(req, res)
+const deleteServer = async (req: Request, res: Response) => {
+        let server = await ServerService.deleteServer(req, res)
+        res.json(server)
 }
 
-const findServerByKey = (req: Request, res: Response) => {
-        ServerService.findServerByKey(req, res)
+const findServerByKey = async (req: Request, res: Response) => {
+        let server = await ServerService.findServerByKey(req, res)
+        res.json(server)
 }
 
 export default {

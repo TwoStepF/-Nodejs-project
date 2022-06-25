@@ -2,8 +2,8 @@ import express, { Router } from "express";
 import bodyParser from "body-parser";
 import routerServer from "./router/server";
 import {con} from "./config/dbConnect";
-import AdminRouter from "./router/admin";
-const PORT = 8081;
+import AdminRouter from "./router/auth";
+const PORT = 8083;
 
 export class App {
     public app: express.Application;
