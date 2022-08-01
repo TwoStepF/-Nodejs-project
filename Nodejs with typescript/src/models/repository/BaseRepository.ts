@@ -5,22 +5,28 @@ import {UpdateServerDTO} from "../DTO/UpdateServerDTO";
 import {Status} from "../DTO/Status";
 
 export default class BaseRepository{
-    static findByUniqueColumn (table: string, column: string, value: any): Promise<any> {
+    table: string
+    constructor(table: string) {
+        this.table = table
+    }
+    findByUniqueColumn (column: string, value: any): Promise<any> {
         let Any!: any
-        let sql = `select * from ${table} where ${column} = ${value}`
+        const table = this.table
         return new Promise(function(resolve, reject){
-            con.query(sql, function (err, rs){
-                try {
-                    resolve(rs[0])
-                }catch (err){
+            con.query("select * from " + table + " where " + column + " = ?",[value], function (err, rs){
+                if(err){
+                    console.log(err)
                     resolve(Any)
+                }
+                else{
+                    resolve(rs[0])
                 }
             });
         })
     }
 
-    static findAll(table: string): Promise<Array<any>>{
-        let sql = `select * from ${table}`
+    findAll(): Promise<Array<any>>{
+        let sql = "select * from " + this.table
         return new Promise(function(resolve, reject){
             con.query(sql, function (err, rs) {
                 resolve(rs);
@@ -28,26 +34,25 @@ export default class BaseRepository{
         })
     }
 
-    static delete(table: string, column: string, id: number): Promise<Status>{
-        let sql = `DELETE FROM ${table} WHERE ${column} = ${id}`;
+    delete(column: string, id: number): Promise<Status>{
+        const table = this.table
         return new Promise(function(resolve, reject){
-            con.query(sql, function (err) {
+            con.query("delete from " + table + " where " + column + " = ?",[id], function (err) {
                 if (err) {
                     console.log(err)
                     let status = new Status(String(err), 'False', '')
                     resolve(status)
                 } else {
-                    let status = new Status('Xóa thành công', 'False', '')
+                    let status = new Status('Xóa thành công', 'OK', '')
                     resolve(status)
                 }
             });
         });
     }
 
-    static findByUnuniqueColumn(table: string, column: string, value: any): Promise<Array<any>>{
-        let sql = `select * FROM ${table} WHERE ${column} = ${value}`;
+    static findByUnUniqueColumn(table: string, column: string, value: any): Promise<Array<any>>{
         return new Promise(function(resolve, reject){
-            con.query(sql, function (err, result) {
+            con.query("select * from " + table + " where " + column + " = ?", [value], function (err, result) {
                 resolve(result)
             });
         });

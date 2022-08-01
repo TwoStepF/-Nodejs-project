@@ -19,6 +19,8 @@ export class App {
         // Giúp chúng ta tiếp nhận dữ liệu từ body của request
         this.app.use(bodyParser.urlencoded({ extended: false}));
         this.app.use(bodyParser.json());
+        var cors = require('cors');
+        this.app.use(cors());
     }
 
     public listen(){
@@ -29,7 +31,7 @@ export class App {
 
     public mainRouter(){
         this.app.use('/server', routerServer)
-        this.app.use('/admin', AdminRouter)
+        this.app.use('/auth', AdminRouter)
     }
 
     public createData(){
@@ -48,8 +50,9 @@ export class App {
                         " status boolean default false,"+
                         " isRunSSH boolean default false,"+
                         " speed float(10, 2),"+
+                        " ram float(10, 2),"+
                         " address VARCHAR(255) NOT NULL UNIQUE,"+
-                        " adminId int,"+
+                        " adminId int NOT NULL,"+
                         " FOREIGN KEY (adminId) REFERENCES admin(id));", function (err, result) {
                 if (err) return;
                 console.log("Table created");

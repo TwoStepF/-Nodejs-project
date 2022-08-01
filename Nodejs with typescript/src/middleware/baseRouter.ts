@@ -1,4 +1,3 @@
-
 import extractJWT from "../middleware/extractJWT";
 
 export default class BaseRouter {
@@ -12,16 +11,17 @@ export default class BaseRouter {
     get(path: string, token: boolean, controllerFuntion: string){
         if(token) {
             this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
-        }else{
+        }
+        else{
             this.router.get(path, this.controller[controllerFuntion])
         }
     }
 
     put(path: string, token: boolean, controllerFuntion: string){
         if(token){
-            this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+            this.router.put(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
         }else{
-            this.router.get(path, this.controller[controllerFuntion])
+            this.router.put(path, this.controller[controllerFuntion])
         }
     }
 
@@ -35,9 +35,10 @@ export default class BaseRouter {
 
     delete(path: string,token: boolean, controllerFuntion: string){
         if(token){
-            this.router.get(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
+            this.router.delete(path, extractJWT.ExtractToken, this.controller[controllerFuntion])
         }else{
-            this.router.get(path, this.controller[controllerFuntion])
+       
+            this.router.delete(path, this.controller[controllerFuntion])
         }
     }
 
