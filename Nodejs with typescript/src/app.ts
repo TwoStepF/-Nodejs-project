@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import routerServer from "./router/server";
 import {con} from "./config/dbConnect";
 import AdminRouter from "./router/auth";
-const PORT = 8083;
+const PORT = 8084;
 
 export class App {
     public app: express.Application;
@@ -41,7 +41,7 @@ export class App {
                         " password VARCHAR(255) NOT NULL);", function (err, result) {
                 if (err)
                     return;
-                console.log("Table created");
+                console.log("Table created admin");
             });
             con.query("CREATE TABLE server"+
                         "(id INT AUTO_INCREMENT PRIMARY KEY,"+
@@ -54,8 +54,22 @@ export class App {
                         " address VARCHAR(255) NOT NULL UNIQUE,"+
                         " adminId int NOT NULL,"+
                         " FOREIGN KEY (adminId) REFERENCES admin(id));", function (err, result) {
-                if (err) return;
-                console.log("Table created");
+                if (err) console.log();
+                console.log("Table created server");
             });
+        con.query("CREATE TABLE rfToken"+
+            "(id INT AUTO_INCREMENT PRIMARY KEY,"+
+            " rftoken NVARCHAR(255) NOT NULL UNIQUE,"+
+            " usernmae VARCHAR(255) NOT NULL)", function (err, result) {
+            if (err) return;
+            console.log("Table created rfToken");
+        });
+        con.query("CREATE TABLE otp"+
+            "(id INT AUTO_INCREMENT PRIMARY KEY,"+
+            " OTP VARCHAR(255) NOT NULL UNIQUE,"+
+            " time VARCHAR(255) NOT NULL)", function (err, result) {
+            if (err) return;
+            console.log("Table created rfToken");
+        });
     }
 }

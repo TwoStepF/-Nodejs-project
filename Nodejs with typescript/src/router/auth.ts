@@ -6,7 +6,8 @@ const Adminrouter =  Router();
 
 const authRouter = new AuthRouter(Adminrouter, AuthController);
 authRouter.post('/register',false,  'register');
-authRouter.post('/login', false,'login')
+authRouter.post('/login', false,'login');
+authRouter.post('/refresh', false,'refreshToken');
 export default Adminrouter;
 
 

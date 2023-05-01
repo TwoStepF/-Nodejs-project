@@ -1,6 +1,6 @@
-import { Status } from './../DTO/Status';
-import { Admin } from './../Entitys/Admin';
-import { con } from "../../config/dbConnect";
+import { Status } from '../DTO/Status';
+import { Admin } from '../Entitys/Admin';
+import { con } from "../config/dbConnect";
 import { Server } from "../Entitys/Server";
 import { CreateServerDTO } from "../DTO/CreateServerDTO";
 
@@ -16,9 +16,7 @@ export default class ServerRopository extends BaseRepository{
         return new Promise(function(resolve, reject){
             con.query(`INSERT INTO server (name, password, address, adminId) VALUES ( ?, ?, ?, ?)`,[server.name, server.password, server.address, server.username.id], async function (err) {
                 if (err) {
-                    console.log(err)
-                    status = new Status('Địa chỉ hoặc tên server đã tồn tại', 'False', '')
-                    resolve(status)
+                   reject(err)
                 }else{
                     status = new Status('Tạo thành công', 'OK', '')
                     resolve(status)
@@ -54,9 +52,7 @@ export default class ServerRopository extends BaseRepository{
         return new Promise(function(resolve, reject){
             con.query(sql, [server.name, server.address, server.id], async function (err) {
                 if (err) {
-                    console.log(err)
-                    status = new Status('Địa chỉ hoặc tên server đã tồn tại', 'False', '')
-                    resolve(status)
+                    reject(err)
                 }else{
                     status = new Status('Cập nhật thành công', 'OK', '')
                     resolve(status)

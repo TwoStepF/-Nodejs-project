@@ -1,5 +1,5 @@
 import {Admin} from "../Entitys/Admin";
-import {con} from "../../config/dbConnect";
+import {con} from "../config/dbConnect";
 import {Server} from "../Entitys/Server";
 import {UpdateServerDTO} from "../DTO/UpdateServerDTO";
 import {Status} from "../DTO/Status";
@@ -10,13 +10,11 @@ export default class BaseRepository{
         this.table = table
     }
     findByUniqueColumn (column: string, value: any): Promise<any> {
-        let Any!: any
         const table = this.table
         return new Promise(function(resolve, reject){
             con.query("select * from " + table + " where " + column + " = ?",[value], function (err, rs){
                 if(err){
-                    console.log(err)
-                    resolve(Any)
+                    reject(err)
                 }
                 else{
                     resolve(rs[0])
@@ -29,7 +27,11 @@ export default class BaseRepository{
         let sql = "select * from " + this.table
         return new Promise(function(resolve, reject){
             con.query(sql, function (err, rs) {
-                resolve(rs);
+                if(err){
+                    reject(err)
+                }else{
+                    resolve(rs);
+                }
             });
         })
     }
@@ -39,9 +41,7 @@ export default class BaseRepository{
         return new Promise(function(resolve, reject){
             con.query("delete from " + table + " where " + column + " = ?",[id], function (err) {
                 if (err) {
-                    console.log(err)
-                    let status = new Status(String(err), 'False', '')
-                    resolve(status)
+                    reject(err)
                 } else {
                     let status = new Status('Xóa thành công', 'OK', '')
                     resolve(status)

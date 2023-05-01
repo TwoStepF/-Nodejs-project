@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="91e59df7-1d4a-47b1-a007-e9266d00d184" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/repository/TokenRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/baseRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/baseRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ServerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ServerController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funtions/signJWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/funtions/signJWT.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/extractJWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/extractJWT.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/DTO/CreateServerDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/DTO/CreateServerDTO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/DTO/LoginDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/DTO/LoginDTO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/DTO/serverDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/DTO/serverDTO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Entitys/Server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Entitys/Server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Service/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Service/AuthService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Service/ServerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Service/ServerService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/repository/BaseRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/BaseRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/AdminDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/AdminDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/CreateServerDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/CreateServerDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/LoginDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/LoginDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/RegisterDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/RegisterDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/Status.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/Status.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/UpdateServerDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/UpdateServerDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/DTO/serverDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/serverDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Entitys/Admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entitys/Admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Entitys/Server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entitys/Server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Service/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/AuthService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Service/ServerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/ServerService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/repository/AdminRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/AdminRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/repository/BaseRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/BaseRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/repository/ServerRopository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ServerRopository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/auth.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +54,21 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Service/AuthService.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Service/ServerService.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/config/config.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/funtions/signJWT.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/middleware/ServerRouter.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/middleware/extractJWT.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/repository/BaseRepository.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/router/auth.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/router/server.ts" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2A4Um6TUHkpqTUdr8KJ5vrgWtsr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,21 +76,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../EnglishApp" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\-Nodejs-project\Nodejs with typescript\node_modules\typescript\lib" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/-Nodejs-project/Nodejs with typescript&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\-Nodejs-project\\Nodejs with typescript\\node_modules\\typescript\\lib&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\-Nodejs-project\Nodejs with typescript\src" />
       <recent name="D:\Nodejs with typescript\src" />
     </key>
   </component>
@@ -119,10 +147,63 @@
       <workItem from="1658645821547" duration="433000" />
       <workItem from="1658646291296" duration="226000" />
       <workItem from="1658800513809" duration="106000" />
+      <workItem from="1659707060599" duration="4789000" />
+      <workItem from="1659753567844" duration="16125000" />
+      <workItem from="1659876429653" duration="3964000" />
+      <workItem from="1659886010377" duration="64000" />
+      <workItem from="1660011789658" duration="4120000" />
+      <workItem from="1660029333436" duration="6253000" />
+      <workItem from="1660050145419" duration="2692000" />
+      <workItem from="1660103037393" duration="1929000" />
+      <workItem from="1660186631128" duration="5700000" />
+      <workItem from="1660274333322" duration="17705000" />
+      <workItem from="1660393438311" duration="10243000" />
+      <workItem from="1660615170801" duration="1777000" />
+      <workItem from="1660620899757" duration="1311000" />
+      <workItem from="1660624302394" duration="144000" />
+      <workItem from="1660789481754" duration="5749000" />
+      <workItem from="1660810201981" duration="4847000" />
+      <workItem from="1660874148354" duration="594000" />
+      <workItem from="1660961187360" duration="1771000" />
+      <workItem from="1660986497282" duration="46000" />
+      <workItem from="1662034224538" duration="792000" />
+      <workItem from="1662173655152" duration="10394000" />
+      <workItem from="1662283434894" duration="5523000" />
+      <workItem from="1662342258017" duration="2701000" />
+      <workItem from="1662366423354" duration="2289000" />
+      <workItem from="1662430073702" duration="1165000" />
+      <workItem from="1662515375347" duration="1809000" />
+      <workItem from="1662602795303" duration="571000" />
+      <workItem from="1662643607209" duration="2376000" />
+      <workItem from="1662693099847" duration="2541000" />
+      <workItem from="1663128793773" duration="3640000" />
+      <workItem from="1663727080020" duration="24000" />
+      <workItem from="1664418774525" duration="1689000" />
+      <workItem from="1666873147053" duration="350000" />
+      <workItem from="1668345549100" duration="1571000" />
+      <workItem from="1669206198195" duration="36000" />
+      <workItem from="1669207997130" duration="621000" />
+      <workItem from="1670402833294" duration="674000" />
+      <workItem from="1670816956244" duration="433000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
