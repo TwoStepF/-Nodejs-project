@@ -1,0 +1,75 @@
+.styled-table {
+    border-radius: 5px;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    color: #ff7200;
+    text-align: center;
+}
+.center{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styled-table thead tr {
+    background-color: #ff7200;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ff7200;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #ff7200;
+}
+
+select{
+    border-radius: 15px;
+    
+}
+span{
+    margin-left: 20px;
+}
+.btnLoc{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    background-color: #ff7200;
+    color: black;
+    margin-left: 20px;
+}
+
+.btnSua{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: #f30707;
+    color: black;
+    margin-left: 10px;
+}
+
+.btnXoa{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: #c0d40d;
+    color: black;
+    margin-left: 10px;
+}

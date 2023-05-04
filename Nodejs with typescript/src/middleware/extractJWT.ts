@@ -14,7 +14,7 @@ interface JwtPayload {
 
 const ExtractToken = (req: Request, res: Response, next: NextFunction) => {
     loggin.info(NAMESPACE, 'Validating Token');
-    let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtoYW5oMjAwMSIsImlhdCI6MTY4MjkzMDU1NywiZXhwIjoxNjgyOTMwNTc3LCJpc3MiOiJ0b2tlbiJ9.0iTstbSsinoEPMEE8BNrC4ZUylYjDCKuMA2HVEQoLcg".split(' ')[1]
+    let token = req.headers.authorization?.split(' ')[1]
     if (token){
         jwt.verify(token, config.server.token.secret, (error, decode) => {
             if(error){
